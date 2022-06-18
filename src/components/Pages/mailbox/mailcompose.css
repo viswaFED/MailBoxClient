@@ -1,0 +1,53 @@
+.composediv{
+    height: 80%;
+    width: 80%;
+}
+
+.composeip{
+    margin-left: 0.5%;
+    margin-top: 2%;
+}
+
+.inputemail{
+    margin-left: 1%;
+    border-left: 1px solid aliceblue;
+    border-right: 2px solid aliceblue; 
+    border-top: 2px solid aliceblue; 
+    border-bottom: 0.5px solid rgb(8, 9, 10);
+
+    height: 30px;
+    width: 85%;
+    padding-left: 3%;
+}
+
+.inputSubject{
+    border-left: 1px solid aliceblue;
+    border-right: 2px solid aliceblue; 
+    border-top: 2px solid aliceblue; 
+    border-bottom: 0.5px solid rgb(8, 9, 10);
+
+    height: 30px;
+    width: 85%;
+    margin-left: 2%;
+    padding-left: 3%;
+}
+.texteditor{
+    height: 400px;
+    padding-left: 3%;
+    width: 85%;
+    margin-left: 2%;
+    border-left: 1px solid aliceblue;
+    border-right: 2px solid aliceblue; 
+    border-top: 2px solid aliceblue; 
+    border-bottom: 0.5px solid rgb(8, 9, 10);
+}
+
+.composebutm{
+    margin-left: 0.5%;
+    margin-top: 2%;
+}
+.sendbtn{
+    background-color: rgb(68, 128, 196);
+    border: none;
+    color: antiquewhite;
+}
