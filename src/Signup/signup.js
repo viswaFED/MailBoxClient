@@ -1,7 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useRef,useContext, useState } from "react";
 import "./signup.css";
+import {  useHistory } from "react-router-dom";
+import MailBoxContext  from "../Store/Context-Provider";
 
 const Signup = () => {
+  const conCtx = useContext(MailBoxContext);
+  const history = useHistory();
     const inputEmailRef = useRef();
     const inputPasswordRef = useRef();
     const confirmPasswordRef = useRef();
@@ -24,7 +28,7 @@ const Signup = () => {
         ) {
           try {
             const response = await fetch(
-              "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDr1f9eNHanBEMWnHIbgvnptZhmiFPV3RU",
+              "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB7HwfipVjXuiBNZqFraaBAGRnLWWvzX7c",
               {
                 method: "POST",
                 body: JSON.stringify({
@@ -44,8 +48,8 @@ const Signup = () => {
               localStorage.setItem("userID", data.localId);
               inputEmailRef.current.value = "";
               inputPasswordRef.current.value = "";
-            //   conCtx.login(data.idToken, data.email);
-            //   history.replace("/home");
+               conCtx.login(data.idToken, data.email);
+              history.replace("/home");
             } else {
               const data = await response.json();
               alert(data.error.message);
@@ -64,7 +68,7 @@ const Signup = () => {
         ) {
           try {
             const response = await fetch(
-              "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDr1f9eNHanBEMWnHIbgvnptZhmiFPV3RU",
+              "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB7HwfipVjXuiBNZqFraaBAGRnLWWvzX7c",
               {
                 method: "POST",
                 body: JSON.stringify({
