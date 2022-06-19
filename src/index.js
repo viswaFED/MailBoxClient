@@ -3,13 +3,17 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { MailBoxContextProvider } from "./Store/Context-Provider";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import store from "./Store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <MailBoxContextProvider>
+  <Provider store={store}>
+  <BrowserRouter>
     <App />
-  </MailBoxContextProvider>
+  </BrowserRouter>
+</Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,37 +1,64 @@
 .composediv{
-    height: 80%;
-    width: 80%;
+    /* width: 95%;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 5px; */
+    width:95%;
+    /** Sizeable height for the form **/
+    height:300px;
+    /** Black color with opacity **/
+    background-color:rgba(180, 180, 180, 0.452);
+    /** Responsive layout **/
+    display:flex;
+    /** One element on top of the other **/
+    flex-direction:column;
+    /** Vertically at the center **/
+    justify-content: center;
+    /** Smooth corners **/
+    border-radius:10px;
+    /** Top, bottom, right, and left spacing between form and it's content **/
+    padding:20px;
+    /** Spacing from the top **/
+    margin-top:10px;
 }
-
 .composeip{
     margin-left: 0.5%;
     margin-top: 2%;
+    width: 100%;
 }
 
 .inputemail{
-    margin-left: 1%;
-    border-left: 1px solid aliceblue;
-    border-right: 2px solid aliceblue; 
-    border-top: 2px solid aliceblue; 
-    border-bottom: 0.5px solid rgb(8, 9, 10);
-
+    /* border-left: 1px solid rgba(0,0,0,0.5);
+    border-right: 1px solid rgba(0,0,0,0.5); 
+    border-top: 1px solid rgba(0,0,0,0.5); 
+    border-bottom: 0.5px solid rgb(8, 9, 10); */
+    border: none;
+    background-color:rgba(146, 145, 145, 0.233);
     height: 30px;
-    width: 85%;
+    margin-left: 1%;
+    width: 91%;
     padding-left: 3%;
+}
+.composeiptext{
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 95%;
+    height: 100%;
 }
 
 .inputSubject{
-    border-left: 1px solid aliceblue;
+    /* border-left: 1px solid aliceblue;
     border-right: 2px solid aliceblue; 
     border-top: 2px solid aliceblue; 
-    border-bottom: 0.5px solid rgb(8, 9, 10);
-
+    border-bottom: 0.5px solid rgb(8, 9, 10); */
+    border: none;
+    background-color:rgba(146, 145, 145, 0.233);
     height: 30px;
-    width: 85%;
-    margin-left: 2%;
+    width: 91%;
+    margin-left: 2.7%;
     padding-left: 3%;
 }
-.texteditor{
+/* .texteditor{
     height: 400px;
     padding-left: 3%;
     width: 85%;
@@ -40,14 +67,21 @@
     border-right: 2px solid aliceblue; 
     border-top: 2px solid aliceblue; 
     border-bottom: 0.5px solid rgb(8, 9, 10);
-}
+} */
 
 .composebutm{
     margin-left: 0.5%;
     margin-top: 2%;
+    
 }
 .sendbtn{
-    background-color: rgb(68, 128, 196);
-    border: none;
-    color: antiquewhite;
+    font: inherit;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    
 }

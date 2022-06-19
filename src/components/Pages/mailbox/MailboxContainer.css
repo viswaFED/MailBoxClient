@@ -1,0 +1,81 @@
+.sideBar{
+    background-color:rgba(180, 180, 180, 0.452);
+    height: 600px;
+    width: 200px;
+    margin-top: -1%;
+   
+}
+.mailboxpage{
+    background-image: linear-gradient(to bottom right, #fc0345,#fc03b1,#4a03fc);
+    height: 540px;
+}
+
+.sideBarContent{
+    margin-left: 8%;
+    margin-top: 1rem;
+}
+.ComposeBtn{
+    border: solid;
+    border-width: 1px;
+    /* border-color: gainsboro; */
+    margin-top: 10%;
+    background-color: transparent;
+    height: 40px;
+    width: 85%;
+    color: white;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+.ComposeBtn:hover{
+    background-color:rgba(155, 155, 155, 0.5);
+
+}
+.inbox{
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+    height: 25px;
+    width: 85%;
+    font-weight: bold;
+    padding-left: 3%;
+    font-size: 14px;
+}
+.inbox:hover{
+    background-color:rgba(155, 155, 155, 0.5);
+    color: aliceblue;
+}
+
+.mailcontent{
+    width:75%;
+    /* Entire page height */
+    height:400px;
+    /* Responsive layout */
+    display:flex;
+    /* Display on top of the other */
+    flex-direction: column; 
+    /* Display horizontally at the center */ 
+    align-items: center;
+    /* Smooth transition to bottom right with different colors */
+    background-image: linear-gradient(to bottom right, #fc0345,#fc03b1,#4a03fc);
+    /* To cover the entire screen */
+    background-size:cover;
+    /* Image position */
+    background-position:center;
+    /* To not repeat the image beyond it's scale */
+    background-repeat:no-repeat;
+
+    margin-left: 20%;
+    margin-top: -38%;
+    /* width: 75%;
+    height: 100%;
+    border: 10px solid rgb(25, 90, 146); */
+
+   
+}
+.mailitems{
+    background-color: rgba(210, 230, 255, 0.437);
+    margin-left: 20%;
+    width: 70%;
+    margin-top: -38%;
+    height: 600px;
+}

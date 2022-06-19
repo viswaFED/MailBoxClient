@@ -6,6 +6,7 @@ import LoginPage from "./Signup/signup";
 import Compose from "./components/Pages/mailbox/mailCompse";
 import Layout from "./components/NavBar/Layout";
 import HomePage from "./components/Pages/HomePage/HomePage";
+import MailBoxBody from "./components/Pages/mailbox/MailBoxContainer";
 function App() {
   const conCtx = useContext(MailBoxContext);
   return (
@@ -19,15 +20,15 @@ function App() {
         )}
         {conCtx.isLoggedIn && (
           <Route path="/mailbox">
-            <Compose />
+            <MailBoxBody />
           </Route>
         )}
-        {conCtx.isLoggedIn &&(
+        {conCtx.isLoggedIn && (
           <Route path="/home">
-            <HomePage/>
+            <HomePage />
           </Route>
         )}
-      
+
         <Route path="*">
           <Redirect to="/" />
         </Route>

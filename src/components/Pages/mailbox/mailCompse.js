@@ -20,6 +20,7 @@ const Compose = () => {
       console.log(Sendername);
       const data={
           sender:sender,
+          receiver: receiver,
           subject:SubjectRef.current.value,
           body:text,
       }
@@ -57,7 +58,7 @@ const Compose = () => {
             className="inputSubject"
           ></input>
         </div>
-        <div className="composeip">
+        <div className="composeiptext">
           <CKEditor editor={ClassicEditor} 
           className='texteditor'
           data={text}
