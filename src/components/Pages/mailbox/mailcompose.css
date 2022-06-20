@@ -68,7 +68,9 @@
     border-top: 2px solid aliceblue; 
     border-bottom: 0.5px solid rgb(8, 9, 10);
 } */
-
+.ck-editor__editable_inline {
+    min-height: 100px;
+  }
 .composebutm{
     margin-left: 0.5%;
     margin-top: 2%;

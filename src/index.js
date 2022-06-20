@@ -4,15 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
+import { MailBoxContextProvider } from "./Store/Context-Provider";
 import store from "./Store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-  <BrowserRouter>
+   <MailBoxContextProvider>
     <App />
-  </BrowserRouter>
+  </MailBoxContextProvider>
 </Provider>
 );
 
